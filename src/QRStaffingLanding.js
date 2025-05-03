@@ -5,13 +5,13 @@ import logo from "./logo.png";
 
 export default function QRStaffingLanding() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-gray-950 text-white px-6 pt-12 pb-6 flex flex-col items-center justify-center space-y-10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-gray-950 text-white px-6 pt-12 pb-6 flex flex-col items-center space-y-10 overflow-y-auto">
       <motion.img
         src={logo}
         alt="Creative Personnel Logo"
-        className="w-28 h-auto drop-shadow-xl ml-[-18px]"
+        className="w-28 h-auto drop-shadow-xl ml-[-12px]"
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1.3 }}
+        animate={{ opacity: 1, scale: 1.5 }}
         transition={{ duration: 0.5 }}
       />
 
@@ -42,26 +42,26 @@ export default function QRStaffingLanding() {
               <Sparkles className="text-blue-400" />
               <h2 className="text-xl font-semibold">Quick Staffing Request</h2>
             </div>
-            <form className="space-y-4">
+            <form className="space-y-4 text-center">
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
+                className="w-full text-center p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
               />
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
+                className="w-full text-center p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Work Email"
-                className="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
+                className="w-full text-center p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
               />
               <input
                 type="text"
                 placeholder="# of Workers Needed"
-                className="w-full p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
+                className="w-full text-center p-3 rounded-lg bg-white/10 placeholder-gray-400 text-white focus:outline-none"
               />
               <button className="w-full bg-blue-500 hover:bg-blue-600 text-white text-lg py-2 rounded-xl">
                 Request Staffing Now
